@@ -1,0 +1,24 @@
+<div class="launch-card">
+    <div class="card-image">
+        <img [src]="launch_data?.links?.mission_patch" alt="launch image" width="100" height="100">
+    </div>
+    <div class="card-title mt-3">{{launch_data.mission_name}} #{{launch_data.flight_number}}</div>
+    <div class="mission-ids">
+      <label for="">Mission Ids:</label> 
+      <ul *ngIf="launch_data?.mission_id?.length">
+        <li *ngFor="let id of launch_data.mission_id"><span class="text-primary">{{id}}</span></li>
+      </ul>
+    </div>
+    <div>
+      <label for="">Launch Year: </label> 
+      <span class="text-primary"> {{launch_data.launch_year}}</span>
+    </div>
+    <div>
+      <label for="">Successful Launch: </label> 
+      <span class="text-primary"> {{launch_data.launch_success}}</span>
+    </div>
+    <div>
+      <label for="">Successful Landing: </label> 
+      <span class="text-primary"> {{launch_data?.rocket?.first_stage?.cores && launch_data?.rocket?.first_stage?.cores[0]?.land_success ? true : false}}</span>
+    </div>
+</div>

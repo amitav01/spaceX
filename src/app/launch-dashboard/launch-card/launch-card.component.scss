@@ -1,0 +1,35 @@
+.launch-card {
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    min-height: 480px;
+
+    label {
+        font-weight: bold;
+    }
+}
+
+.card-image {
+    background: #efeeee;
+    min-height: 200px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.card-title {
+    font-weight: bold;
+    color: #4966d2;
+    font-size: 18px;
+}
+
+.mission-ids {
+    label {
+        font-size: 18px;
+    }
+
+    li {
+        list-style-type: disc;
+    }
+}

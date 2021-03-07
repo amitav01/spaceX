@@ -1,0 +1,27 @@
+<div class="filters-card">
+    <div class="heading">Filters</div>
+    <div class="launch-year">
+      <div class="title">Launch Year</div>
+      <div class="button-list mt-1">
+        <ul (click)="filterByYear($event)">
+          <li *ngFor="let year of launch_years;let odd = odd;">
+            <button class="btn" [ngStyle]="{float: odd && 'right', backgroundColor: year == active_year ? '#7cba01' : ''}" [value]="year">{{year}}</button>
+          </li>
+        </ul>
+      </div>
+      <div class="title">Successful Launch</div>
+      <div class="button-list mt-1">
+        <ul (click)="filterByLaunch($event)">
+          <li> <button class="btn" value="true" [style.backgroundColor]="active_launch=='true' ? '#7cba01' : ''">True</button> </li>
+          <li><button class="btn" value="false" [style.backgroundColor]="active_launch=='false' ? '#7cba01' : ''"style="float:right">False</button></li>
+        </ul>
+      </div>
+      <div class="title">Successful Landing</div>
+      <div class="button-list mt-1">
+        <ul (click)="filterByLanding($event)">
+          <li> <button class="btn" value="true" [style.backgroundColor]="active_landing=='true' ? '#7cba01' : ''">True</button> </li>
+          <li><button class="btn" value="false" [style.backgroundColor]="active_landing=='false' ? '#7cba01' : ''" style="float:right">False</button></li>
+        </ul>
+      </div>
+    </div>
+</div>

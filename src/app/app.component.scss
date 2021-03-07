@@ -1,0 +1,17 @@
+#root {
+    padding: 12px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 700px) {
+    .main {
+        flex-direction: row;
+    }
+}
