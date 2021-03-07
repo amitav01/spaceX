@@ -1,6 +1,6 @@
-# Sample
+# SpaceX Launch Program
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+The project is deployed on Firebase. Live url -> [https://spacex-21.web.app/](https://spacex-21.web.app/).
 
 ## Development server
 
